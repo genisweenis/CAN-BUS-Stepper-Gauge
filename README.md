@@ -76,5 +76,14 @@ Then back in the USB-CAN software, go back over to the left of the window and cl
 Type different stuff into byte 4 of the message you constructed and watch the stepper needle move!
 
 Notes:
+
 If you want to use more than 1 stepper gauge, you need more than 1 stepper motor driver breakout board. You also need to hook "VM" (motor voltage) directly up to the power supply, otherwise you may brown out your arduino or SEEED CAN shield!!!
+
 If your CAN wires between the SEEED shield and the USB-CAN V8.00 are longer than a few inches, please twist CANH and CANL tightly together to prevent noise from your power supply garbling the messages or knocking the bus offline. CAN is a delicate signal until the proper physical measures are taken to protect it.
+
+If you need your gauge to respond faster, like for a tachometer, change these 3 things: 
+
+1. find the variable "interval" in the Arduino sketch and decrease it.
+2. find the function "stepper.setSpeed" in the Arduino sketch and increase it.
+3. in the USB-CAN V8.00 software, decrease "Interval (ms)" (top of the "more messages to send" window).
+4. Keep adjusting these things until the gauge response is as fast as you require.
