@@ -2,6 +2,9 @@
 Controlling Adafruit stepper motor automotive gauges using an arduino, CAN shield, and adafruit stepper motor drivers.
 This is all the information you should need to display CAN-bus data on 1 or more of these adafruit gauges https://www.adafruit.com/product/2424 .
 
+![IMG_20240919_140325566_HDR](https://github.com/user-attachments/assets/73b66a32-cdda-4a28-8dad-419e28657caa)
+
+
 Shopping list:
 
 Adafruit automotive gauge stepper motor (x1 or 2) https://www.adafruit.com/product/2424
